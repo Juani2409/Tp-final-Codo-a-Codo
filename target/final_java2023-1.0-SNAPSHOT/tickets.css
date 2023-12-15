@@ -1,0 +1,27 @@
+/* .box {
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #1B86F8;
+  } */
+
+  .box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #1B86F8;
+}
+
+.total{
+    border: 1px solid  #add3fc ;
+    background-color: #CCE5FF;
+}
+
+.boton-tickets{
+    color:white;
+    background-color: #97C93E;
+    border: #97C93E;
+    border-radius: 5px;
+}

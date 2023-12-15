@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Bootstrap only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <title>TP-Integrador</title>
+</head>
+
+<body>
+
+<!-- 
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Sitio Web</title> -->
+        <!-- Enlaza el archivo CSS de Bootstrap -->
+        <!-- <link href="ruta/al/archivo/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body> -->
+
+
+        <header class="navbar navbar-expand-lg navbar-light" style="background-color: #353A40;color: white;">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="#">
+                    <img src="./imagenes/codoacodo.png" alt="" width="130" height="75"
+                        class="d-inline-block align-text-top">
+                </a>
+                <p class="fs-4 mt-2">Conf Bs As</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" style="color: white;" aria-current="page" href="#">La
+                                conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" style="color: white;" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" style="color: white;" href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" style="color: white;">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" style="color: green;" href="./tickets.html" id="comprarTicketsLink">Comprar tickets</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link fs-5" style="color: green;" href="vistas/login.jsp" id="comprarTicketsLink">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="container-fluid edificio">
+            <!-- Texto encima de la imagen de fondo -->
+            <div class="texto-edificio d-flex flex-column align-items-end">
+                <h2>Conf Bs As</h2>
+                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
+                    conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a
+                    miembros del evento a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos
+                    para ti. Te esperamos!</p>
+                <!-- Botones dentro del contenedor -->
+                <div class="botones-container mt-auto">
+                    <button type="button" class="btn btn-outline-white text-white">Quiero ser orador</button>
+                    <button type="button" class="btn custom-green-btn ms-2" id="comprarTicketsBtn">Comprar tickets</button>
+                </div>
+            </div>
+        </div>
+<script>
+document.getElementById('comprarTicketsBtn').addEventListener('click', function() {
+    window.location.href = 'tickets.html';
+});
+
+// Obtener el enlace de "Comprar tickets" en la barra de navegación
+var comprarTicketsLink = document.getElementById('comprarTicketsLink');
+
+// Agregar un evento al enlace para redirigir a tickets.html al hacer clic
+comprarTicketsLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+    window.location.href = 'tickets.html'; // Redirigir a tickets.html
+
+});
+
+</script>
+
+
+
+        <div class="container-fluid cards ">
+            <div class="center-text mt-2">
+                <h6>CONOCE A LOS</h6>
+                <h2 class="bold-heading">ORADORES</h2>
+            </div>
+            <!-- Contenedor de las tarjetas -->
+            <div class="container mt-5 ">
+                <div class="row justify-content-center align-items-center ">
+                    <!-- Tarjeta 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./imagenes/steve.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p style="display: inline-block; background-color: #FFC007; margin-right: 10px; border-radius: 10px; font-weight: bold; padding: 2px 5px;">
+                                    JavaScript</p>
+                                <p style="display: inline-block; background-color: #17A2B7; color: white; border-radius: 10px; font-weight: bold; padding: 2px 5px;">React</p>
+                                <h4>Steve Jobs</h4>
+                                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la
+                                    tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./imagenes/bill.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p style="display: inline-block; background-color: #FFC007; margin-right: 10px; border-radius: 10px; font-weight: bold; padding: 2px 5px;">
+                                    JavaScript</p>
+                                <p style="display: inline-block; background-color: #17A2B7; color: white; border-radius: 10px; font-weight: bold; padding: 2px 5px;">React</p>
+                                <h4>Bill Gates</h4>
+                                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la
+                                    tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./imagenes/ada.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p style="display: inline-block; background-color: #6D747E; color: white; margin-right: 10px; border-radius: 10px; font-weight: bold; padding: 2px 5px;">
+                                    Negocios</p>
+                                <p style="display: inline-block; background-color: #DD3545; color: white; border-radius: 10px; font-weight: bold; padding: 2px 5px;">Startups</p>
+                                <h4>Ada Lovelace</h4>
+                                <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la
+                                    tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+    <a href="vistas/verOradores.jsp"
+       style="background-color: green; color: white; padding: 10px 20px; text-decoration: none; border: none; cursor: pointer; margin: 10px 0;">
+        Ver otros Oradores
+    </a>
+</div>
+
+        </div>
+
+
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <!-- Lado izquierdo (imagen) -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6  p-0">
+                    <img src="./imagenes/honolulu.jpg" alt="Imagen" class="img-fluid max-height-600">
+                </div>
+                <!-- Lado derecho (texto) -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6  "
+                    style="background-color:#353A40; color: white;">
+                    <h2 class="mt-3">Bs As - Octubre</h2>
+                    <p>
+                        Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados
+                        Unidos. Honolulu es la mas sureña de entre las principales ciudades estadounidenses.Aunque el
+                        nombre de Honolulu se refiere al área urbana en la consta sureste de la isla de Oahu, la ciudad
+                        y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la
+                        ciudad(aproximadamente 600km2 de superficie)
+                    </p>
+                    <button type="button" class="btn custom-btn mb-3">Conocé más</button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container mt-5">
+            <div class="center-text mt-2">
+                <h6>CONVIÉRTETE EN UN</h6>
+                <h2 class="bold-heading">ORADOR</h2>
+                <p>Anótate como orador para dar una charla ingnite. Cuéntanos de que quieres hablar!</p>
+            </div>
+            
+            
+            <form  action="registroOrador" method="post">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" name="nombre" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <input type="text" name="apellido" class="form-control" placeholder="Apellido">
+                        </div>
+                    </div>
+
+                    <!-- Input que ocupa el mismo ancho que los dos anteriores juntos -->
+                    <div class="mb-1" style="position: relative;">
+                        <input type="text" name="tema" class="form-control"
+                            style="width: 100%; height: 120px; padding: 40px 20px 10px 20px;">
+                        <label for="custom-input"
+                            style="position: absolute; top: 10px; left: 20px; color: #6c757d;">Sobre qué quieres
+                            hablar?</label>
+                    </div>
+                    <p style="color: #999999;">Recuerda incluir un título para tu charla</p>
+                    <!-- Botón que ocupa el mismo ancho que los dos inputs anteriores juntos -->
+                    <button type="submit"
+                        class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 btn btn-block"
+                        style="background-color: #96C93E; color: white;">Enviar</button>
+                </div>
+            </div>
+                </form>
+        </div>
+
+
+
+
+        <footer class="text-white mt-5" style="background-color:#1E4155 ;">
+            <div class="container">
+                <div class="row justify-content-center align-items-center ">
+                    <p class="col-md-auto m-4 ">Preguntas frecuentes</p>
+                    <p class="col-md-auto m-4">Contáctanos</p>
+                    <p class="col-md-auto m-4 ">Prensa</p>
+                    <p class="col-md-auto m-4 ">Conferencias</p>
+                    <p class="col-md-auto m-4 ">Términos y condiciones</p>
+                    <p class="col-md-auto m-4 ">Privacidad</p>
+                    <p class="col-md-auto m-4 ">Estudiantes</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+        <!-- Incluye el archivo JavaScript de Bootstrap al final del cuerpo -->
+         <script src="ruta/al/archivo/bootstrap.min.js"></script>
+   <!-- </body>
+
+    </html> -->
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

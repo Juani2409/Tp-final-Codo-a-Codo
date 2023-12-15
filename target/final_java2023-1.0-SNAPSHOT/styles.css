@@ -1,0 +1,118 @@
+.edificio {
+  background-image: url('./imagenes/ba1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* Altura deseada */
+  position: relative;
+
+}
+
+
+.edificio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Color oscuro con opacidad */
+}
+
+/* Estilo base para el contenedor de texto */
+.texto-edificio {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  
+  max-height: 600px;
+  width: 600px;
+  text-align: end;
+}
+
+/* Estilo para los botones dentro del contenedor */
+.botones-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .texto-edificio {
+    width: 100%; /* Ocupar todo el ancho */
+    left: 0; /* Alinear a la izquierda */
+    text-align: center; /* Alinear el texto al centro */
+    padding: 10px 20px; /* Añadir espacio en los bordes horizontalmente */
+  }
+
+  .botones-container {
+    flex-direction: row; /* Apilar los botones verticalmente */
+    align-items: center; /* Centrar horizontalmente los botones */
+    margin-top: 20px; /* Espaciado superior */
+  }
+}
+
+
+/* Estilo responsivo para pantallas más pequeñas */
+@media (max-width: 767px) {
+  .texto-edificio {
+    position: absolute; /* Cambia la posición a relativa */
+    /* Reinicia la posición vertical */
+    right: auto; /* Reinicia la posición horizontal */
+    width: 100%; /* Ancho completo */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 20px; /* Aumenta el espaciado interno */
+  }
+}
+/* Estilo personalizado para el botón con borde blanco y fondo transparente */
+.btn-outline-white {
+  background-color: transparent;
+  /* Fondo transparente */
+  border: 2px solid white;
+  /* Borde sólido blanco */
+  color: white;
+  /* Texto en blanco */
+}
+
+.custom-green-btn {
+  background-color: #29A744;
+  /* Establecer el color de fondo verde */
+  border-color: #29A744;
+  /* Establecer el color del borde igual al fondo */
+  color: white;
+  /* Texto en blanco */
+}
+
+.custom-btn {
+  border: 2px solid #ffffff;
+  /* Establece el borde blanco */
+  color: #ffffff;
+  /* Establece el color del texto en blanco */
+  background-color: transparent;
+  /* Fondo transparente */
+}
+
+.custom-btn:hover {
+  background-color: #ffffff;
+  /* Cambia el fondo a blanco cuando el botón se coloca en hover */
+  color: #000000;
+  /* Cambia el color del texto a negro en hover */
+}
+
+
+.center-text {
+  text-align: center;
+  /* Centrar el texto horizontalmente */
+}
+
+.bold-heading {
+  font-weight: bold;
+  /* Hacer el texto en negrita */
+}
+
+
